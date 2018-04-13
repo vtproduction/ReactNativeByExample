@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import { ListView, Text, TextInput, View, AsyncStorage } from "react-native";
-import styles from './styles';
-import TaskListCell from '../TaskListCell';
+
+import { AsyncStorage, ListView, Text, TextInput, View } from "react-native";
+
+import TasksListCell from "../TasksListCell";
+import styles from "./styles";
 
 
 export default class TaskList extends Component{
@@ -11,13 +13,13 @@ export default class TaskList extends Component{
             rowHasChanged: (r1,r2) => r1 !== r2
         })
 
-        this.state = {
-            dataSource: ds.cloneWithRows([
-                'Buy milk','Walk the dog','Do laundry','Write the first chapter of my book'
-            ]),
-            listOfTasks: [],
-            text: ''
-        }
+        
+        this.state = { 
+            ds: new ListView.DataSource({
+                rowHasChanged: (r1, r2) => r1 !== r2
+            }), 
+            listOfTasks: [], 
+            text: "" };
     }
 
     componentDidMount(){
@@ -25,32 +27,25 @@ export default class TaskList extends Component{
     }
 
     render(){
-        return(
-            <View style={styles.container}>
-                <TextInput
-                    autoCorrect={false}
-                    onChangeText={(text) => this._changeTextInputValue(text)}
-                    onSubmitEditing={() => this._addTask()}
-                    returnKeyType={'done'}
-                    styles={styles.TextInput}
-                    value={this.state.text}/>
-                <ListView
-                    dataSource={this.state.dataSource}
-                    enableEmptySections={true}
-                    renderRow={(rowData) => this._renderRowData(rowData)}/>
-            </View>
-        );
+        const dataSource = this.state.ds.cloneWithRows(this.state.listOfTasks);
+        
+        return <View>
+                <TextInput autoCorrect={false} onChangeText={text => this._changeTextInputValue(text)} onSubmitEditing={() => this._addTask()} returnKeyType={"done"} 
+                    style={styles.textInput} value={this.state.text} />
+                <ListView dataSource={dataSource} enableEmptySections={true} renderRow={(rowData, sectionID, rowID) => this._renderRowData(rowData, rowID)} />
+            </View>;
     }
 
-    async _addTask (){
-        
+    async _addTask () {
         const singleTask = {
             completed: false,
             text: this.state.text
         }
+
         const listOfTasks = [...this.state.listOfTasks, singleTask];
-        
+
         await AsyncStorage.setItem('listOfTasks', JSON.stringify(listOfTasks));
+
         this._updateList();
     }
 
@@ -67,15 +62,33 @@ export default class TaskList extends Component{
         this.setState({text:text})
     }
 
-    _renderRowData(rowData, rowId){
-        return(
-            <TaskListCell
-                completed={rowData.completed}
-                id={rowId}
-                onPress={(rowId) => this._completeTask(rowId)}
-                text={rowData.text}
-            />
-        )
+    async _completeTask (rowID){
+        const singleUpdatedTask = {
+            ...this.state.listOfTasks[rowID],
+            completed: !this.state.listOfTasks[rowID].completed
+        };
+
+        const listOfTasks = this.state.listOfTasks.slice();
+        listOfTasks[rowID] = singleUpdatedTask;
+
+        await AsyncStorage.setItem('listOfTasks', JSON.stringify(listOfTasks));
+
+        this._updateList();
+    }
+
+
+    async _deleteTask (rowID){
+        const listOfTasks = this.state.listOfTasks.slice();
+        listOfTasks.splice(rowID,1)
+
+        await AsyncStorage.setItem('listOfTasks', JSON.stringify(listOfTasks))
+
+        this._updateList()
+    }
+
+    _renderRowData(rowData, rowID){
+        return <TasksListCell completed={rowData.completed} id={rowID} onPress={rowID => this._completeTask(rowID)} text={rowData.text} 
+        onLongPress={rowID => this._deleteTask(rowID)} />;
     }
 
     
