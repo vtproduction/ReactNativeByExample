@@ -1,46 +1,24 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+import React, { Component } from "react";
+import { AppRegistry, View, NavigatorIOS, StyleSheet } from "react-native";
 
-import React, { Component } from 'react';
-import TaskList from "./app/components/TaskList";
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import TasksList from "./app/components/TasksList";
 
-
-
-
-export default class App extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <TaskList/>
-      </View>
-    );
-  }
+export default class Tasks extends Component {
+    render() {
+        return (
+            <NavigatorIOS
+                initialRoute={{
+                    component: TasksList,
+                    title: 'Task'
+                }}
+                style={styles.container}/>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+    container:{
+        flex: 1
+    }
+})
+
