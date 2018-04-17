@@ -1,0 +1,36 @@
+dependencies: \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/node_modules/react-native/Libraries/Text/TextInput/RCTBaseTextInputShadowView.m \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/node_modules/react-native/Libraries/Text/TextInput/RCTBaseTextInputShadowView.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/node_modules/react-native/Libraries/Text/BaseText/RCTBaseTextShadowView.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/node_modules/react-native/Libraries/Text/RCTTextAttributes.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView+Layout.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUIManager.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/node_modules/react-native/Libraries/Text/Text/NSTextStorage+FontScaling.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/node_modules/react-native/Libraries/Text/TextInput/RCTBaseTextInputView.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTView.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/node_modules/react-native/Libraries/Text/TextInput/RCTBackedTextInputDelegate.h \
+  /Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/Expenses2/node_modules/react-native/Libraries/Text/TextInput/RCTBackedTextInputViewProtocol.h

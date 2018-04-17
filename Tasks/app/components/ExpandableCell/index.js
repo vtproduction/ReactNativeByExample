@@ -1,47 +1,62 @@
-import React, { Component } from "react";
-import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import PropTypes from "prop-types";
+import {
+  LayoutAnimation,
+  Text,
+  TouchableHighlight,
+  View
+} from 'react-native';
 
-import {LayoutAnimation, Text, TouchableHighlight, View} from 'react-native';
 import styles from './styles';
 
-export default class ExpandableCell extends Component{
-    static propTypes ={
-        title: PropTypes.string.isRequired
-    }
+import DatePickerDialogue from '../DatePickerDialogue';
 
-    constructor (props){
-        super(props)
-        this.state = {
-            expanded: false
-        }
-    }
+class ExpandableCell extends Component {
+  static propTypes = {
+    title: PropTypes.object.isRequired
+  }
 
-    componentWillUpdate(){
-        LayoutAnimation.linear();
-    }
+  constructor (props) {
+    super (props);
 
-    render(){
-        return(
-            <View style={styles.expandableCellContainer}>
-                <View>
-                    <TouchableHighlight
-                        onPress={() => this._expandCell()}
-                        underlayColor={'#D3D3D3'}>
-                        <Text style={styles.visibleContent}>
-                            {this.props.title}
-                        </Text>    
-                    </TouchableHighlight>
-                </View>
-                <View style={[styles.hiddenContent, this.state.expanded ? {} : {maxHeight: 0}]}>
-                    {this.props.children}
-                </View>
-            </View>
-        )
+    this.state = {
+      expanded: false
     }
+  }
 
-    _expandCell(){
-        this.setState({
-            expanded: !this.state.expanded
-        })
-    }
+  componentWillUpdate () {
+    LayoutAnimation.linear();
+  }
+
+  render () {
+    return (
+      <View
+        style={ styles.container }>
+        <View>
+          <TouchableHighlight
+            onPress={ () => this._onPress() }
+            underlayColor={ '#D3D3D3' }>
+            <DatePickerDialogue
+              textConditionals={ this.props.textConditionals } />
+          </TouchableHighlight>
+        </View>
+        <View
+          style={ [styles.collapsibleContent, { maxHeight: 100 }] } >
+          { this.props.children }
+        </View>
+      </View>
+    )
+  }
+
+  _onPress () {
+
+    this.props.onPress();
+
+    this.setState({
+      expanded: !this.state.expanded
+    });
+  }
+
 }
+
+export default ExpandableCell;

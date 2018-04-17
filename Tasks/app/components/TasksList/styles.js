@@ -1,21 +1,20 @@
-import { Navigator, StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        paddingTop: Navigator.NavigationBar.Styles.General.TotalNavHeight
-    },
-    listView: {
-        margin: 10,
-        padding: 10
-    },
-    textInput: {
-        borderColor: "gray",
-        borderWidth: 1,
-        height: 40,
-        margin: 10,
-        padding: 10
-    }
+  tasksListContainer: {
+    flex: 1,
+    paddingTop: 64
+  },
+  tasksListTextInput: {
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    margin: 10,
+    padding: 10
+  },
+  tasksListView: {
+    flex: 1
+  }
 });
 
 export default styles;

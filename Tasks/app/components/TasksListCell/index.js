@@ -1,40 +1,40 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+
 import {
   Text,
   TouchableHighlight,
   View
 } from 'react-native';
 
-export default class TasksListCell extends Component {
-  static propTypes = {
-    completed: PropTypes.bool.isRequired,
-    id: PropTypes.string.isRequired,
-    onPress: PropTypes.func.isRequired,
-    onLongPress: PropTypes.func.isRequired,
-    text: PropTypes.string.isRequired
-  }
+import styles from './styles';
 
-  constructor (props) {
-    super (props);
-  }
-
+class TasksListCell extends Component {
   render () {
-    const isCompleted = this.props.completed ? 'line-through' : 'none';
-    const textStyle = {
-      fontSize: 20,
-      textDecorationLine: isCompleted
-    };
-
     return (
-        <View>
-            <TouchableHighlight
-                onPress={ () => this.props.onPress(this.props.id) }
-                onLongPress={ () => this.props.onLongPress() }
-                underlayColor={ '#D5DBDE' } >
-                <Text style={ textStyle }>{ this.props.text }</Text>
-            </TouchableHighlight>
-        </View>
+      <View style={ styles.container }>
+        <TouchableHighlight
+          onLongPress={ () => this.props.onLongPress() }
+          onPress={ () => this.props.onPress(this.props.id) }
+          underlayColor="#D5DBDE" >
+          <View style={ styles.textContainer }>
+            <Text
+              style={ [styles.rowText, { textDecorationLine: this.props.completed ? 'line-through' : 'none' }] }> { this.props.text } </Text>
+            <Text style={ styles.dueDateText }> { this._getDueDate() } </Text>
+          </View>
+        </TouchableHighlight>
+      </View>
     )
   }
+
+  _getDueDate () {
+    if (this.props.formattedDate && !this.props.completed) {
+      return 'Due ' + this.props.formattedDate;
+    }
+
+    if (!this.props.formattedDate) {
+      return '';
+    }
+  }
 }
+
+export default TasksListCell

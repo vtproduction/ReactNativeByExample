@@ -1,4 +1,20 @@
-import { AppRegistry } from 'react-native';
-import App from './App';
+import React, { Component } from 'react';
+import {StackNavigator} from 'react-navigation';
+import {
+    AppRegistry,
+    NavigatorIOS,
+    StyleSheet
+} from 'react-native';
+import Home from './app/Home';
 
-AppRegistry.registerComponent('Expenses', () => App);
+
+export default class Expenses extends Component {
+    render() {
+        return <Home />;
+    }
+} 
+
+
+
+
+AppRegistry.registerComponent('Expenses', () => Expenses);
