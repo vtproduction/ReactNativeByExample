@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/cityme/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_38ed2e4bfe10b1d2aa7cf99743b6e65d7c3eccfa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cityme/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_70467368417532922a8cf4222f6db1519d063eee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cityme/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_14a431975e728d8a2a99788f98e2e7f96e669e0e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_38b77030b1d0476592d5f44176a955c8cae6871e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cityme/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_303d9cdbb6a01a6bbc3fbf0fbb0cbe6461b38223.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_f8049b97fbe7af21ab508358edbb309a07b937d1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_33a13da3966b9d65f83823a09aa13a57b65b2248.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_04e86acc530e86549bde120818110e7c15269854.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_f5f4ef17ac6a8a12a7351f0adf8c6eea18aec318.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_633b8d2f886a5ae213f8444eb53efc36dcfe681c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_d138d3c04f568dd10e78edaa9beed336a874dd04.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cityme/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_12d06bec892f05836bf60a93b4bf987adfdb8d69.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cityme/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_6dd107a0e81a505612878cb6755541220f7de0d0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_c1d18353d880cbb62023b15f9faf399a261b2f50.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cityme/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_c051824299a95c86cfb354c691a1967bbe287f59.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.55.4_4cd16ece35d919d7ca5b4a74b9ae105a8b06644a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_805bdd08d2e7f52759510c871ffdf32fe0d3d19c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_304b74e4a86ec2ced1f186ad5f03380c799032e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_a075df23bda5c9085f861fbb13245702c545da15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_f964d8d7f64166e47c13322aa8033e80567fc5d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cityme/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Volumes/DATA/NIENDOCS/WorkSpace/RESEARCH/react-native-workspace/002/ExpensesMySelf/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_a3dd5895b0bace03cfc6bf560d6cae53435e48dd.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,125 @@
+import React, { Component } from 'react';
+import PropTypes from "prop-types";
+import {
+	Button,
+	DatePickerAndroid,
+	Modal,
+	ScrollView,
+	Text,
+	TextInput,
+	View
+} from "react-native";
+
+import moment from 'moment';
+import styles from './styles';
+
+import * as storageMethods from '../../utils/storageMethods';
+import ExpandableCell from '../ExpandableCell';
+
+export default class AddExpensesModal extends Component {
+	static propTypes = {
+		modalVisible: PropTypes.bool.isRequired,
+		month: PropTypes.string.isRequired,
+		toggleModal: PropTypes.func.isRequired,
+		year: PropTypes.string.isRequired
+	}
+	
+	constructor (props) {
+		super (props);
+		
+		this.state = {
+			amount: '',
+			date: new Date(),
+			description: '',
+			expanded: false
+		}
+	}
+	
+	render () {
+		const expandableCellTitle = 'Date: ' + moment(this.state.date).format('ll') + ' (tap to change)';
+		
+		return <Modal animationType={"slide"} transparent={false} visible={this.props.modalVisible}>
+			<ScrollView style={styles.modalContainer}>
+				<Text style={styles.headerText}>Add an Expense</Text>
+				<View style={styles.amountRow}>
+					<Text style={styles.amountText}>Amount</Text>
+					<TextInput keyboardType={"numeric"} onChangeText={value => this._changeAmount(value)} placeholder={"0"} style={styles.amountInput} value={this.state.amount} />
+				</View>
+				<Text style={styles.descriptionText}>Description</Text>
+				<TextInput onChangeText={value => this._changeDescription(value)} placeholder={"Book on React Native development"} style={styles.descriptionInput} value={this.state.description} />
+				<View style={[styles.expandableCellContainer, { height: this.state.expanded ? this.state.datePickerHeight : 40 }]}>
+					<ExpandableCell expanded={this.state.expanded} onPress={() => this._onExpand()} title={expandableCellTitle}>
+					
+					</ExpandableCell>
+				</View>
+				<Button color={"#86B2CA"} disabled={!(this.state.amount && this.state.description)} onPress={() => this._saveItemToBudget()} title={"Save Expense"} />
+				<Button color={"#E85C58"} onPress={() => this._clearFieldsAndCloseModal()} title={"Cancel"} />
+			</ScrollView>
+		</Modal>;
+	}
+	
+	
+	_changeAmount(amount) {
+		this.setState({
+			amount
+		});
+	}
+	
+	_changeDescription(description) {
+		this.setState({
+			description
+		});
+	}
+	
+	_clearFieldsAndCloseModal () {
+		this.setState({
+			amount: '',
+			description: ''
+		});
+		
+		this.props.toggleModal()
+	}
+	
+	_getDatePickerHeight (event) {
+		this.setState({
+			datePickerHeight: event.nativeEvent.layout.width
+		});
+	}
+	
+	onDateChange (date) {
+		this.setState({
+			date
+		});
+	}
+	
+	async _onExpand () {
+		this.setState({
+			expanded: !this.state.expanded
+		});
+		const {action, year, month, day} = await DatePickerAndroid.open({
+			date: new Date()
+		});
+		if (action !== DatePickerAndroid.dismissedAction) {
+			// Selected year, month (0-11), day
+			console.log(year);
+			console.log(month);
+			console.log(day);
+			
+			let date = new Date(year, month, day)
+			console.log(date);
+			this.setState({ date });
+		}
+	}
+	
+	async _saveItemToBudget () {
+		const expenseObject = {
+			amount: this.state.amount,
+			date: moment(this.state.date).format('ll'),
+			description: this.state.description
+		};
+		
+		await storageMethods.saveItemToBudget(this.props.month, this.props.year, expenseObject);
+		
+		this._clearFieldsAndCloseModal();
+	}
+}
