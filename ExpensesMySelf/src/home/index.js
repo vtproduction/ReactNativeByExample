@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import {
     Text,
-    View
+    View,
+    Button
 } from "react-native";
 import styles from "./styles";
-import Actions from 'react-native-router-flux';
 
 
 export default class Home extends Component{
@@ -19,12 +19,24 @@ export default class Home extends Component{
 
 
     render(){
-        return <View>
+        return (
+            <View>
                 <Text onPress={this.onPressTitle}>HOME</Text>
-            </View>;
+                <Button title="Go to Add Expense" onPress={this.onPressTitle} />
+            </View>
+        );
     }
 
-    onPressTitle(){
-        Actions.AddExpense();
+    onPressTitle = () =>{
+        this.props.navigation.navigate("AddExpense",{
+            id: 1,
+            onCallback: this.onCallback
+        });
+    }
+
+    onCallback = data =>{
+        console.log('====================================');
+        console.log(data);
+        console.log('====================================');
     }
 }
